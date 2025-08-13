@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+
+<div class="detail-container">
+    <h2><%= item.name %></h2>
+    <img src="<%= item.image %>" alt="<%= item.name %>" class="detail-img">
+    
+    <div class="detail-info">
+        <p class="description"><%= item.description %></p>
+        
+        <!-- เพิ่มรายการเพิ่มเติม -->
+        <div class="additional-info">
+            <div class="info-item">
+                <strong>หมวดหมู่:</strong> <%= item.category %>
+            </div>
+            <div class="info-item">
+                <strong>ส่วนผสม:</strong> <%= item.ingredients %>
+            </div>
+            <div class="info-item">
+                <strong>เวลาในการทำ:</strong> <%= item.cookingTime %> นาที
+            </div>
+            <div class="info-item">
+                <strong>ความยาก:</strong> <%= item.difficulty %>
+            </div>
+            <div class="info-item">
+                <strong>ภูมิภาค:</strong> <%= item.region %>
+            </div>
+        </div>
+        
+        <div class="price">
+            <strong>ราคา: <%= item.price %> บาท</strong>
+        </div>
+    </div>
+    
+    <a href="/menu" class="btn-back">← กลับไปที่เมนู</a>
+</div>
+
+<%- include('../partials/footer') %>

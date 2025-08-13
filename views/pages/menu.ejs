@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<h2>เมนูอาหาร</h2>
+<div class="menu-grid">
+    <% menu.forEach(item => { %>
+        <div class="menu-card">
+            <img src="<%= item.image %>" alt="<%= item.name %>">
+            <h3><%= item.name %></h3>
+            <p><%= item.description %></p>
+            <p>ราคา: <%= item.price %> บาท</p>
+            <a href="/menu/<%= item.id %>">ดูรายละเอียด</a>
+        </div>
+    <% }) %>
+</div>
+
+<%- include('../partials/footer') %>

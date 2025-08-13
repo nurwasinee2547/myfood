@@ -1,0 +1,325 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+h2 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 2rem;
+}
+
+/* Home Page Styles */
+.p1 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.home-image {
+    margin: 2rem 0;
+}
+
+.welcome-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-menu {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #b71c1c;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.menu-card h3 {
+    color: #d32f2f;
+    margin-bottom: 0.5rem;
+}
+
+.menu-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.menu-card a {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu-card a:hover {
+    background-color: #b71c1c;
+}
+
+/* Menu Detail Styles */
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.detail-img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.detail-info {
+    margin: 2rem 0;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.additional-info {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.info-item {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.info-item strong {
+    color: #d32f2f;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.price {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #d32f2f;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fff3e0;
+    border-radius: 6px;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #666;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #555;
+}
+
+/* About Page Styles */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.developer-profile {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.developer-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.developer-image img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.developer-info h3 {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.info-section h4 {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 0.5rem;
+}
+
+.info-section p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.info-section ul {
+    padding-left: 1.5rem;
+}
+
+.info-section li {
+    margin-bottom: 0.3rem;
+}
+
+.info-section strong {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center-image {
+        max-width: 90%;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .detail-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
